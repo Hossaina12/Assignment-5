@@ -22,8 +22,8 @@
                             <button class="lg:mx-2 p-2 text-lg text-gray300 ml-5">Donate Bangladesh</button></li></div>
                       
                         <div>
-                            <li class="lg:flex"><img src="./assets/coin.png" alt="coin">
-                                <button class="lg:mx-2 p-2 text-lg text-gray300 ml-5">5550BDT</button></li>
+                            <li class="lg:flex list-none"><img src="./assets/coin.png" alt="coin">
+                                <p class="lg:mx-2 p-2 text-lg text-gray300 ml-5"><span id="dasbord"> 5500 </span>BDT</p></li>
                         </div>
                         
                     </nav>
@@ -49,10 +49,11 @@
             </div>
             <div class="p-8">
                 <div class="p-4">
-                    <!-- Daisy ui theke nite hbe -->
-                    <button>
-                       0 BDT
-                    </button>
+                    
+                    <div class="h-18 w-32 rounded-md border-2 outline-gray-600">
+                        <li class="lg:flex list-none"><img src="./assets/coin.png" alt="coin">
+                            <p class="lg:mx-2 p-2 text-lg text-gray300 ml-5"><span id="dnt1"> 0.00 </span>BDT</p></li>
+                    </div>
                 </div>
                 <div class="p-5">
                     <p>
@@ -64,14 +65,14 @@
                     </p>
                 </div>
                 <div class="p-5">
-                    <input class="h-14 text-center w-full rounded-md border-2 outline-gray-600" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <input id="input1" class="h-14 text-center w-full rounded-md border-2 outline-gray-600" type="text" name="" id="" placeholder="Write Donation Amount">
                 </div>
                 
                     <div class="p-5">
                     
-                        <li class="list-none"><button class="lg:mx-2 p-3 text-black font-semibold ml-5 bg-lime-400 w-full h-14 rounded-lg text-center">Donate Now</button></li>
+                        <li class="list-none"><button id="nkButton" class="lg:mx-2 p-3 text-black font-semibold ml-5 bg-lime-400 w-full h-14 rounded-lg text-center">Donate Now</button></li>
                         </div>
-                
+                <p id="suc1" class="hidden">Successfully Added</p>
             </div>
         </div>
 
@@ -83,10 +84,9 @@
                 <img class="h-full w-full" src="./assets/feni.png" alt="feni flood">
             </div>
             <div class="p-8">
-                <div class="p-4">
-                    <button>
-                       0 BDT
-                    </button>
+                <div class="h-18 w-32 rounded-md border-2 outline-gray-600">
+                    <li class="lg:flex list-none"><img src="./assets/coin.png" alt="coin">
+                        <p class="lg:mx-2 p-2 text-lg text-gray300 ml-5"><span id="dnt2"> 0.00 </span>BDT</p></li>
                 </div>
                 <div class="p-5">
                     <p>
@@ -98,14 +98,14 @@
                     </p>
                 </div>
                 <div class="p-5">
-                    <input class="h-14 text-center w-full rounded-md border-2 outline-gray-600" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <input id="input2" class="h-14 text-center w-full rounded-md border-2 outline-gray-600" type="text" name="" id="" placeholder="Write Donation Amount">
                 </div>
                 
                     <div class="p-5">
                     
-                        <li class="list-none"><button class="lg:mx-2 p-3 text-black font-semibold ml-5 bg-lime-400 w-full h-14 rounded-lg text-center">Donate Now</button></li>
+                        <li class="list-none"><button id="fnButton" class="lg:mx-2 p-3 text-black font-semibold ml-5 bg-lime-400 w-full h-14 rounded-lg text-center">Donate Now</button></li>
                         </div>
-                
+                        <p id="suc2" class="hidden">Successfully Added</p>
             </div>
         </div>
 
@@ -117,10 +117,9 @@
                 <img class="h-full w-full" src="./assets/quota-protest.png" alt="quota movement">
             </div>
             <div class="p-8">
-                <div class="p-4">
-                    <button>
-                       0 BDT
-                    </button>
+                <div class="h-18 w-32 rounded-md border-2 outline-gray-600">
+                    <li class="lg:flex list-none"><img src="./assets/coin.png" alt="coin">
+                        <p class="lg:mx-2 p-2 text-lg text-gray300 ml-5"><span id="dnt3"> 0.00 </span>BDT</p></li>
                 </div>
                 <div class="p-5">
                     <p>
@@ -130,18 +129,52 @@
                     </p>
                 </div>
                 <div class="p-5">
-                    <input class="h-14 text-center w-full rounded-md border-2 outline-gray-600" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <input id="input3" class="h-14 text-center w-full rounded-md border-2 outline-gray-600" type="text" name="" id="" placeholder="Write Donation Amount">
                 </div>
                 <div class="p-5">
 
-                        <li class="list-none"><button class="lg:mx-2 p-3 text-black font-semibold ml-5 bg-lime-400 w-full h-14 rounded-lg text-center">Donate Now</button></li>
+                        <li class="list-none"><button id="mvButton" class="lg:mx-2 p-3 text-black font-semibold ml-5 bg-lime-400 w-full h-14 rounded-lg text-center">Donate Now</button></li>
                         </div>
+                        <p id="suc3" class="hidden">Successfully Added</p>
             </div>
         </div>
     </section>
 
+    <section class="mt-8">
+
+       <div class="hidden bg-slate-100">
+        <div class=" h-20 mb-5 p-5 w-full rounded-md border-2 outline-gray-600">
+            <p class="font-bold">
+              <span id="his1">00</span>  BDT Donated for feni flood.
+            </p>
+            <p>
+             tarikh
+            </p>
+        </div>
+        <div class="h-20 mb-5 p-5 w-full rounded-md border-2 outline-gray-600">
+            <p class="font-bold">
+                <span id="his2">00</span>  BDT Donated for feni flood.
+              </p>
+              <p>
+               tarikh
+              </p>
+        </div>
+        <div class="h-20 mb-5 p-5 w-full rounded-md border-2 outline-gray-600">
+            <p class="font-bold">
+                <span id="his3">00</span>  BDT Donated for feni flood.
+              </p>
+              <p>
+               tarikh
+              </p>
+        </div>
+       </div>
+       <div class="bg-yellow-50  border-2 outline-yellow-50">
+
+       </div>
+    </section>
 
 
+<script src="./index.js"></script>
     
 </body>
 </html>
